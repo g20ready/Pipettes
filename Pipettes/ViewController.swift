@@ -12,6 +12,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        ApiManager.shared.fetchPips { (pips, err) in
+            if err != nil {
+                print("Error fetching pips : \(err?.localizedDescription)")
+                return
+            }
+            print("Fetched \(pips?.count) pips")
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
 

@@ -17,6 +17,9 @@
 		503BC7801E007E6200E5486F /* PipettesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503BC77F1E007E6200E5486F /* PipettesTests.swift */; };
 		503BC78B1E007E6200E5486F /* PipettesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503BC78A1E007E6200E5486F /* PipettesUITests.swift */; };
 		503BC7991E007E9A00E5486F /* PipHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503BC7981E007E9A00E5486F /* PipHelper.swift */; };
+		504722B51E01E98600FB92FB /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504722B41E01E98600FB92FB /* ApiManager.swift */; };
+		504722B71E01E99900FB92FB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504722B61E01E99900FB92FB /* Constants.swift */; };
+		504722B91E01E9EE00FB92FB /* PipDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504722B81E01E9EE00FB92FB /* PipDTO.swift */; };
 		F01A9864F37C6AEC3FB68548 /* Pods_Pipettes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9584CE4F092F107A729529 /* Pods_Pipettes.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +58,9 @@
 		503BC78A1E007E6200E5486F /* PipettesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipettesUITests.swift; sourceTree = "<group>"; };
 		503BC78C1E007E6200E5486F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503BC7981E007E9A00E5486F /* PipHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PipHelper.swift; sourceTree = "<group>"; };
+		504722B41E01E98600FB92FB /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		504722B61E01E99900FB92FB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		504722B81E01E9EE00FB92FB /* PipDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PipDTO.swift; sourceTree = "<group>"; };
 		561F2B0F5E4E7892271C5EAD /* Pods-PipettesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PipettesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PipettesTests/Pods-PipettesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6618E07116AEEEFD19A16773 /* Pods_PipettesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PipettesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D9584CE4F092F107A729529 /* Pods_Pipettes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pipettes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,12 +124,13 @@
 			children = (
 				504722B11E01E8BD00FB92FB /* Model */,
 				504722B01E01E81000FB92FB /* Managers */,
+				504722BA1E01EE9100FB92FB /* UI */,
 				503BC7671E007E6200E5486F /* AppDelegate.swift */,
 				503BC7691E007E6200E5486F /* ViewController.swift */,
-				503BC7761E007E6200E5486F /* Info.plist */,
 				503BC7981E007E9A00E5486F /* PipHelper.swift */,
 				504722B31E01E93400FB92FB /* Assets */,
 				504722B21E01E90900FB92FB /* Support Files */,
+				504722B61E01E99900FB92FB /* Constants.swift */,
 			);
 			path = Pipettes;
 			sourceTree = "<group>";
@@ -149,6 +156,7 @@
 		504722B01E01E81000FB92FB /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				504722B41E01E98600FB92FB /* ApiManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -156,6 +164,7 @@
 		504722B11E01E8BD00FB92FB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				504722B81E01E9EE00FB92FB /* PipDTO.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -163,6 +172,7 @@
 		504722B21E01E90900FB92FB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				503BC7761E007E6200E5486F /* Info.plist */,
 			);
 			name = "Support Files";
 			sourceTree = "<group>";
@@ -175,6 +185,13 @@
 				503BC7731E007E6200E5486F /* LaunchScreen.storyboard */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		504722BA1E01EE9100FB92FB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 		59E2009FF0A75BC67AF61F5B /* Pods */ = {
@@ -482,9 +499,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				504722B71E01E99900FB92FB /* Constants.swift in Sources */,
+				504722B51E01E98600FB92FB /* ApiManager.swift in Sources */,
 				503BC76A1E007E6200E5486F /* ViewController.swift in Sources */,
 				503BC7681E007E6200E5486F /* AppDelegate.swift in Sources */,
 				503BC7991E007E9A00E5486F /* PipHelper.swift in Sources */,
+				504722B91E01E9EE00FB92FB /* PipDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
