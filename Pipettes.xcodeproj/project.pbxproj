@@ -12,7 +12,6 @@
 		503BC7681E007E6200E5486F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503BC7671E007E6200E5486F /* AppDelegate.swift */; };
 		503BC76A1E007E6200E5486F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503BC7691E007E6200E5486F /* ViewController.swift */; };
 		503BC76D1E007E6200E5486F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 503BC76B1E007E6200E5486F /* Main.storyboard */; };
-		503BC7701E007E6200E5486F /* Pipettes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 503BC76E1E007E6200E5486F /* Pipettes.xcdatamodeld */; };
 		503BC7721E007E6200E5486F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503BC7711E007E6200E5486F /* Assets.xcassets */; };
 		503BC7751E007E6200E5486F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 503BC7731E007E6200E5486F /* LaunchScreen.storyboard */; };
 		503BC7801E007E6200E5486F /* PipettesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503BC77F1E007E6200E5486F /* PipettesTests.swift */; };
@@ -46,7 +45,6 @@
 		503BC7671E007E6200E5486F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		503BC7691E007E6200E5486F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		503BC76C1E007E6200E5486F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		503BC76F1E007E6200E5486F /* Pipettes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pipettes.xcdatamodel; sourceTree = "<group>"; };
 		503BC7711E007E6200E5486F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		503BC7741E007E6200E5486F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		503BC7761E007E6200E5486F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,15 +116,14 @@
 		503BC7661E007E6200E5486F /* Pipettes */ = {
 			isa = PBXGroup;
 			children = (
+				504722B11E01E8BD00FB92FB /* Model */,
 				504722B01E01E81000FB92FB /* Managers */,
 				503BC7671E007E6200E5486F /* AppDelegate.swift */,
 				503BC7691E007E6200E5486F /* ViewController.swift */,
-				503BC76B1E007E6200E5486F /* Main.storyboard */,
-				503BC7711E007E6200E5486F /* Assets.xcassets */,
-				503BC7731E007E6200E5486F /* LaunchScreen.storyboard */,
 				503BC7761E007E6200E5486F /* Info.plist */,
-				503BC76E1E007E6200E5486F /* Pipettes.xcdatamodeld */,
 				503BC7981E007E9A00E5486F /* PipHelper.swift */,
+				504722B31E01E93400FB92FB /* Assets */,
+				504722B21E01E90900FB92FB /* Support Files */,
 			);
 			path = Pipettes;
 			sourceTree = "<group>";
@@ -154,6 +151,30 @@
 			children = (
 			);
 			name = Managers;
+			sourceTree = "<group>";
+		};
+		504722B11E01E8BD00FB92FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		504722B21E01E90900FB92FB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		504722B31E01E93400FB92FB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				503BC76B1E007E6200E5486F /* Main.storyboard */,
+				503BC7711E007E6200E5486F /* Assets.xcassets */,
+				503BC7731E007E6200E5486F /* LaunchScreen.storyboard */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 		59E2009FF0A75BC67AF61F5B /* Pods */ = {
@@ -463,7 +484,6 @@
 			files = (
 				503BC76A1E007E6200E5486F /* ViewController.swift in Sources */,
 				503BC7681E007E6200E5486F /* AppDelegate.swift in Sources */,
-				503BC7701E007E6200E5486F /* Pipettes.xcdatamodeld in Sources */,
 				503BC7991E007E9A00E5486F /* PipHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -738,19 +758,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		503BC76E1E007E6200E5486F /* Pipettes.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				503BC76F1E007E6200E5486F /* Pipettes.xcdatamodel */,
-			);
-			currentVersion = 503BC76F1E007E6200E5486F /* Pipettes.xcdatamodel */;
-			path = Pipettes.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 503BC75C1E007E6200E5486F /* Project object */;
 }
