@@ -1,0 +1,6 @@
+framework module Pods_PipettesUITests {
+  umbrella header "Pods-PipettesUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
