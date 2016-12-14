@@ -7,6 +7,7 @@ target 'Pipettes' do
 
   # Pods for Pipettes
   pod 'Alamofire', '~> 4.0'
+  pod 'ObjectMapper', '~> 2.2'
   
   target 'PipettesTests' do
     inherit! :search_paths

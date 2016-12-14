@@ -118,6 +118,7 @@
 		503BC7661E007E6200E5486F /* Pipettes */ = {
 			isa = PBXGroup;
 			children = (
+				504722B01E01E81000FB92FB /* Managers */,
 				503BC7671E007E6200E5486F /* AppDelegate.swift */,
 				503BC7691E007E6200E5486F /* ViewController.swift */,
 				503BC76B1E007E6200E5486F /* Main.storyboard */,
@@ -146,6 +147,13 @@
 				503BC78C1E007E6200E5486F /* Info.plist */,
 			);
 			path = PipettesUITests;
+			sourceTree = "<group>";
+		};
+		504722B01E01E81000FB92FB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 		59E2009FF0A75BC67AF61F5B /* Pods */ = {
@@ -709,6 +717,7 @@
 				503BC7911E007E6200E5486F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		503BC7921E007E6200E5486F /* Build configuration list for PBXNativeTarget "PipettesTests" */ = {
 			isa = XCConfigurationList;
@@ -717,6 +726,7 @@
 				503BC7941E007E6200E5486F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		503BC7951E007E6200E5486F /* Build configuration list for PBXNativeTarget "PipettesUITests" */ = {
 			isa = XCConfigurationList;
@@ -725,6 +735,7 @@
 				503BC7971E007E6200E5486F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
